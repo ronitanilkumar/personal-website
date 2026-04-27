@@ -1,3 +1,5 @@
+type Link = { label: string; href: string };
+
 type Props = {
   org: string;
   orgHref?: string;
@@ -6,6 +8,7 @@ type Props = {
   description: string;
   meta?: string;
   logoSrc?: string;
+  links?: Link[];
 };
 
 export function ExperienceCard({
@@ -16,6 +19,7 @@ export function ExperienceCard({
   description,
   meta,
   logoSrc,
+  links,
 }: Props) {
   return (
     <div className="py-10 border-t border-border first:border-t-0 first:pt-0">
@@ -52,6 +56,28 @@ export function ExperienceCard({
         {description}
       </p>
       {meta && <p className="mt-3 text-[13px] text-soft italic">{meta}</p>}
+      {links && links.length > 0 && (
+        <div className="mt-6 flex flex-wrap gap-2">
+          {links.map((l, i) => {
+            const primary = i === 0;
+            return (
+              <a
+                key={l.label}
+                href={l.href}
+                target="_blank"
+                rel="noreferrer noopener"
+                className={
+                  primary
+                    ? "inline-flex items-center gap-1.5 rounded-md bg-ink px-3.5 py-1.5 text-[13px] font-medium text-bg transition-opacity duration-200 hover:opacity-80"
+                    : "inline-flex items-center gap-1.5 rounded-md border border-border px-3.5 py-1.5 text-[13px] font-medium text-ink transition-colors duration-200 hover:border-ink/40"
+                }
+              >
+                {l.label}
+              </a>
+            );
+          })}
+        </div>
+      )}
     </div>
   );
 }

@@ -80,6 +80,7 @@ export default function Home() {
             description="Co-author on US-JEPA, a self-supervised foundation model for ultrasound cancer detection. 4.73M frames across 49 datasets."
             meta="Submitted to ICML 2026"
             logoSrc="/ucla_logo 1.svg"
+            links={[{ label: "arXiv →", href: "https://arxiv.org/abs/2602.19322" }]}
           />
         </div>
       </FadeIn>
@@ -146,7 +147,6 @@ export default function Home() {
             <LinkedInIcon />
           </a>
         </div>
-        <p className="text-[13px] text-soft">Built by Ronit Anilkumar</p>
       </FadeIn>
     </main>
   );
