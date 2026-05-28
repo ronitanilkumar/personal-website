@@ -49,13 +49,10 @@ export default function Home() {
         <SectionHeading counter="01">About</SectionHeading>
         <div className="space-y-4 text-[17px] leading-[1.8] text-ink max-w-[720px]">
           <p>
-            I&apos;m a third year CSE student at UCLA focused on distributed systems and ML infrastructure. I&apos;m currently building CoWrite, a real-time collaborative editor with CRDT-based sync, and Cascade DB, a temporal vector database in Rust. This summer I&apos;m joining the ML team at{" "}
+            I&apos;m a third year CSE student at UCLA focused on distributed systems and ML infrastructure. This summer I&apos;m joining the ML team at{" "}
             <a href="https://getseam.ai" target="_blank" rel="noreferrer noopener" className="text-ink underline underline-offset-4 decoration-border hover:decoration-ink transition-colors duration-200">Seam AI</a>
-            , and I also research self-supervised learning for medical ultrasound at UCLA&apos;s{" "}
+            . I also research self-supervised learning for medical ultrasound at UCLA&apos;s{" "}
             <a href="https://bair.seas.ucla.edu/" target="_blank" rel="noreferrer noopener" className="text-ink underline underline-offset-4 decoration-border hover:decoration-ink transition-colors duration-200">Biomedical AI Research Lab</a>.
-          </p>
-          <p>
-            Always happy to connect, feel free to reach out!
           </p>
         </div>
       </FadeIn>
@@ -98,11 +95,11 @@ export default function Home() {
             ]}
           />
           <ProjectCard
-            title="Cascade DB"
-            description="Temporal vector database in Rust with LSM-tree storage, time-partitioned HNSW indexing, and eBPF observability. Currently in active development."
-            stack={["Rust", "LSM-tree", "HNSW", "eBPF"]}
+            title="Loom"
+            description="High-speed model weight streaming agent built around the cold-start problem in inference infrastructure. Parallel chunk fetching, content-addressable caching, and a control plane for locating cached models across nodes."
+            stack={["Rust", "tokio", "axum", "reqwest"]}
             links={[
-              { label: "GitHub", href: "https://github.com/ronitanilkumar/cascade-db.git" },
+              { label: "GitHub", href: "https://github.com/ronitanilkumar/Loom" },
             ]}
           />
           <ProjectCard
