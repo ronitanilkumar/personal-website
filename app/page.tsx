@@ -40,6 +40,14 @@ export default function Home() {
             >
               Email
             </a>
+            <a
+              href="/resume.pdf"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="transition-colors duration-200 hover:text-ink"
+            >
+              Resume
+            </a>
           </nav>
         </div>
       </FadeIn>
