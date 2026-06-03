@@ -7,6 +7,7 @@ type Props = {
   className?: string;
   as?: keyof React.JSX.IntrinsicElements;
   duration?: number;
+  id?: string;
 };
 
 export function FadeIn({
@@ -14,6 +15,7 @@ export function FadeIn({
   className = "",
   as: Tag = "div",
   duration = 350,
+  id,
 }: Props) {
   const ref = useRef<HTMLElement | null>(null);
   const [visible, setVisible] = useState(false);
@@ -46,6 +48,7 @@ export function FadeIn({
   return (
     <Component
       ref={ref as React.Ref<HTMLElement>}
+      id={id}
       className={`fade-in ${className}`}
       style={{
         opacity: visible ? 1 : 0,

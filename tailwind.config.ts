@@ -2,14 +2,16 @@ import type { Config } from "tailwindcss";
 
 const config: Config = {
   content: ["./app/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}"],
+  darkMode: "class",
   theme: {
     extend: {
       colors: {
-        bg: "#F5F4F0",
-        ink: "#111111",
-        muted: "#666666",
-        soft: "#999999",
-        border: "#E5E5E5",
+        bg: "var(--color-bg)",
+        ink: "var(--color-ink)",
+        muted: "var(--color-muted)",
+        soft: "var(--color-soft)",
+        border: "var(--color-border)",
+        surface: "var(--color-surface)",
       },
       fontFamily: {
         sans: ["var(--font-sans)", "system-ui", "sans-serif"],

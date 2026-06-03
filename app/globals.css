@@ -4,20 +4,36 @@
 
 :root {
   color-scheme: light;
+  --color-bg: #F5F4F0;
+  --color-ink: #111111;
+  --color-muted: #555555;
+  --color-soft: #888888;
+  --color-border: #E0DED9;
+  --color-surface: #ECEAE4;
+}
+
+.dark {
+  color-scheme: dark;
+  --color-bg: #0E0E0E;
+  --color-ink: #F0EFEB;
+  --color-muted: #999999;
+  --color-soft: #666666;
+  --color-border: #272727;
+  --color-surface: #1A1A1A;
 }
 
 html,
 body {
-  background-color: #f5f4f0;
-  color: #111111;
+  background-color: var(--color-bg);
+  color: var(--color-ink);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
 
 ::selection {
-  background-color: #111111;
-  color: #f5f4f0;
+  background-color: var(--color-ink);
+  color: var(--color-bg);
 }
 
 a {

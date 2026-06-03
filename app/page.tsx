@@ -7,53 +7,26 @@ export default function Home() {
   return (
     <main className="w-full px-8 md:px-16 lg:px-24">
       {/* Hero */}
-      <FadeIn as="section" className="pt-28 pb-24 md:pt-36 md:pb-32">
+      <FadeIn as="section" className="pt-24 pb-16 md:pt-32 md:pb-20">
         <h1 className="text-[64px] md:text-[96px] lg:text-[120px] font-semibold leading-[0.95] tracking-[-0.03em] text-ink">
           RONIT
           <br />
           ANILKUMAR
         </h1>
-        <div className="mt-10 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+        <div className="mt-8 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
           <p className="text-[16px] leading-[1.6] text-muted max-w-[480px]">
             CSE @ UCLA building distributed systems and ML infrastructure.
           </p>
-          <nav className="flex gap-6 text-[14px] text-muted">
-            <a
-              href="https://github.com/ronitanilkumar"
-              target="_blank"
-              rel="noreferrer noopener"
-              className="transition-colors duration-200 hover:text-ink"
-            >
-              GitHub
-            </a>
-            <a
-              href="https://www.linkedin.com/in/ronit-anilkumar"
-              target="_blank"
-              rel="noreferrer noopener"
-              className="transition-colors duration-200 hover:text-ink"
-            >
-              LinkedIn
-            </a>
-            <a
-              href="mailto:ranilkumar@ucla.edu"
-              className="transition-colors duration-200 hover:text-ink"
-            >
-              Email
-            </a>
-            <a
-              href="/resume.pdf"
-              target="_blank"
-              rel="noreferrer noopener"
-              className="transition-colors duration-200 hover:text-ink"
-            >
-              Resume
-            </a>
-          </nav>
+          <div className="flex gap-6 text-[14px] text-muted">
+            <a href="https://github.com/ronitanilkumar" target="_blank" rel="noreferrer noopener" className="transition-colors duration-200 hover:text-ink">GitHub</a>
+            <a href="https://www.linkedin.com/in/ronit-anilkumar" target="_blank" rel="noreferrer noopener" className="transition-colors duration-200 hover:text-ink">LinkedIn</a>
+            <a href="mailto:ranilkumar@ucla.edu" className="transition-colors duration-200 hover:text-ink">Email</a>
+          </div>
         </div>
       </FadeIn>
 
       {/* About */}
-      <FadeIn as="section" className="py-20">
+      <FadeIn as="section" id="about" className="py-16">
         <SectionHeading counter="01">About</SectionHeading>
         <div className="space-y-4 text-[17px] leading-[1.8] text-ink max-w-[720px]">
           <p>
@@ -66,7 +39,7 @@ export default function Home() {
       </FadeIn>
 
       {/* Experience */}
-      <FadeIn as="section" className="py-20">
+      <FadeIn as="section" id="experience" className="py-16">
         <SectionHeading counter="02">Experience</SectionHeading>
         <div>
           <ExperienceCard
@@ -91,7 +64,7 @@ export default function Home() {
       </FadeIn>
 
       {/* Projects */}
-      <FadeIn as="section" className="py-20">
+      <FadeIn as="section" id="projects" className="py-16">
         <SectionHeading counter="03">Projects</SectionHeading>
         <div className="grid gap-4">
           <ProjectCard
@@ -124,7 +97,7 @@ export default function Home() {
       {/* Footer */}
       <FadeIn
         as="footer"
-        className="py-16 border-t border-border flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between"
+        className="py-12 border-t border-border flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between"
       >
         <div className="flex items-center gap-6 text-[14px]">
           <a

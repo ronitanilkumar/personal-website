@@ -1,5 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Plus_Jakarta_Sans, Space_Mono } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
+import { Nav } from "@/components/Nav";
 import "./globals.css";
 
 const sans = Plus_Jakarta_Sans({
@@ -40,7 +42,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${sans.variable} ${mono.variable}`}>
-      <body className="font-sans bg-bg text-ink">{children}</body>
+      <body className="font-sans bg-bg text-ink">
+        <Nav />
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
