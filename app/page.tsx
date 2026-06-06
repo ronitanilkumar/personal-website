@@ -9,9 +9,9 @@ export default function Home() {
       {/* Hero */}
       <FadeIn as="section" className="pt-24 pb-16 md:pt-32 md:pb-20">
         <h1 className="text-[64px] md:text-[96px] lg:text-[120px] font-semibold leading-[0.95] tracking-[-0.03em] text-ink">
-          RONIT
+          Ronit
           <br />
-          ANILKUMAR
+          Anilkumar
         </h1>
         <div className="mt-8 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
           <p className="text-[16px] leading-[1.6] text-muted max-w-[480px]">
