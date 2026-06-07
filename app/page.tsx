@@ -8,20 +8,16 @@ export default function Home() {
     <main className="mx-auto w-full max-w-[760px] px-6 md:px-8">
       {/* Hero */}
       <FadeIn as="section" className="pt-24 pb-16 md:pt-32 md:pb-20">
-        <h1 className="text-[56px] md:text-[76px] font-semibold leading-[0.95] tracking-[-0.03em] text-ink">
-          Ronit
-          <br />
-          Anilkumar
+        <h1 className="text-[44px] md:text-[56px] font-semibold leading-[1.05] tracking-[-0.03em] text-ink">
+          Ronit Anilkumar
         </h1>
-        <div className="mt-8 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
-          <p className="text-[16px] leading-[1.6] text-muted max-w-[420px]">
-            CSE @ UCLA building distributed systems and ML infrastructure.
-          </p>
-          <div className="flex gap-6 text-[14px] text-muted">
-            <a href="https://github.com/ronitanilkumar" target="_blank" rel="noreferrer noopener" className="transition-colors duration-200 hover:text-ink">GitHub</a>
-            <a href="https://www.linkedin.com/in/ronit-anilkumar" target="_blank" rel="noreferrer noopener" className="transition-colors duration-200 hover:text-ink">LinkedIn</a>
-            <a href="mailto:ranilkumar@ucla.edu" className="transition-colors duration-200 hover:text-ink">Email</a>
-          </div>
+        <p className="mt-4 text-[16px] leading-[1.6] text-muted">
+          CSE @ UCLA building distributed systems and ML infrastructure.
+        </p>
+        <div className="mt-6 flex gap-6 text-[14px] text-muted">
+          <a href="https://github.com/ronitanilkumar" target="_blank" rel="noreferrer noopener" className="transition-colors duration-200 hover:text-ink">GitHub</a>
+          <a href="https://www.linkedin.com/in/ronit-anilkumar" target="_blank" rel="noreferrer noopener" className="transition-colors duration-200 hover:text-ink">LinkedIn</a>
+          <a href="mailto:ranilkumar@ucla.edu" className="transition-colors duration-200 hover:text-ink">Email</a>
         </div>
       </FadeIn>
 
