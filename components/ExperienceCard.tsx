@@ -52,7 +52,7 @@ export function ExperienceCard({
         <span className="text-[13px] text-soft shrink-0 pt-1">{date}</span>
       </div>
       <p className="mt-2 text-[14px] text-muted">{role}</p>
-      <p className="mt-4 text-[15px] leading-[1.7] text-muted max-w-[65%]">
+      <p className="mt-4 text-[15px] leading-[1.7] text-muted">
         {description}
       </p>
       {meta && <p className="mt-3 text-[13px] text-soft italic">{meta}</p>}

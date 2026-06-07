@@ -5,16 +5,16 @@ import { ExperienceCard } from "@/components/ExperienceCard";
 
 export default function Home() {
   return (
-    <main className="w-full px-8 md:px-16 lg:px-24">
+    <main className="mx-auto w-full max-w-[760px] px-6 md:px-8">
       {/* Hero */}
       <FadeIn as="section" className="pt-24 pb-16 md:pt-32 md:pb-20">
-        <h1 className="text-[64px] md:text-[96px] lg:text-[120px] font-semibold leading-[0.95] tracking-[-0.03em] text-ink">
+        <h1 className="text-[56px] md:text-[76px] font-semibold leading-[0.95] tracking-[-0.03em] text-ink">
           Ronit
           <br />
           Anilkumar
         </h1>
         <div className="mt-8 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
-          <p className="text-[16px] leading-[1.6] text-muted max-w-[480px]">
+          <p className="text-[16px] leading-[1.6] text-muted max-w-[420px]">
             CSE @ UCLA building distributed systems and ML infrastructure.
           </p>
           <div className="flex gap-6 text-[14px] text-muted">
@@ -28,7 +28,7 @@ export default function Home() {
       {/* About */}
       <FadeIn as="section" id="about" className="py-16">
         <SectionHeading counter="01">About</SectionHeading>
-        <div className="space-y-4 text-[17px] leading-[1.8] text-ink max-w-[720px]">
+        <div className="space-y-4 text-[17px] leading-[1.8] text-ink">
           <p>
             I&apos;m a third year CSE student at UCLA focused on distributed systems and ML infrastructure. This summer I&apos;m joining the ML team at{" "}
             <a href="https://getseam.ai" target="_blank" rel="noreferrer noopener" className="text-ink underline underline-offset-4 decoration-border hover:decoration-ink transition-colors duration-200">Seam AI</a>
@@ -66,7 +66,7 @@ export default function Home() {
       {/* Projects */}
       <FadeIn as="section" id="projects" className="py-16">
         <SectionHeading counter="03">Projects</SectionHeading>
-        <div className="grid gap-4">
+        <div>
           <ProjectCard
             title="CoWrite"
             description="Real-time collaborative editor built on CRDTs. Implements conflict-free concurrent editing across distributed clients with persistent document state and live cursor presence."
